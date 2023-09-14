@@ -85,21 +85,22 @@ main {
 }
 
 .home .container h1 {
-    font-size: 45px;
+    font-size: 25px;
     font-weight: 500;
     animation: slideInRight 1s ease-in;
 }
 
 .home .container h2 {
     width: 60%;
-    font-size: 25px;
+    font-size: 15px;
     padding-top: 12px;
     font-weight: 500;
     animation: slideInLeft 1s ease-in;
 }
 
 .home .container .img-logo{
-    padding-right: 32px;
+    width: 80%;
+    padding-right: 22px;
 }
 
 .home .container .img-maintenance{
@@ -153,4 +154,30 @@ main {
 .footer-copyright{
     text-align: center;
     color: #ff4f5b;
+}
+
+@media (min-width: 767px) {
+    .home .container h1 {
+        font-size: 45px;
+        font-weight: 500;
+        animation: slideInRight 1s ease-in;
+    }
+    
+    .home .container h2 {
+        width: 60%;
+        font-size: 25px;
+        padding-top: 12px;
+        font-weight: 500;
+        animation: slideInLeft 1s ease-in;
+    }
+    
+    .home .container .img-logo{
+        padding-right: 32px;
+    }
+    
+    .home .container .img-maintenance{
+        width: 40%;
+        padding-top: 12px;
+        animation: slideInTop 1s ease-in;
+    } 
 }
