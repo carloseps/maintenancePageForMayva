@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0;
+    padding: 0
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px)
+    }
+
+    to {
+        transform: translateX(0)
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(300px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+:root {
+    --primary-color: #fd1f2e
+}
+
+body {
+    pointer-events: all;
+    color: #444;
+    font-family: Montserrat, sans-serif
+}
+
+img {
+    border: none
+}
+
+section {
+    min-height: 100vh
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 62rem;
+    padding: 0 1rem;
+    width: 100%
+}
+
+main {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fd1f2e
+}
+
+.home .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    height: 50vh;
+}
+
+.home .container h1 {
+    font-size: 45px;
+    font-weight: 500;
+    animation: slideInRight 1s ease-in;
+}
+
+.home .container h2 {
+    width: 60%;
+    font-size: 25px;
+    padding-top: 12px;
+    font-weight: 500;
+    animation: slideInLeft 1s ease-in;
+}
+
+.home .container .img-logo{
+    padding-right: 32px;
+}
+
+.home .container .img-maintenance{
+    width: 40%;
+    padding-top: 12px;
+    animation: slideInTop 1s ease-in;
+}
+
+.footer {
+    background: var(--primary-color)
+}
+
+.footer .container {
+    padding: 2rem
+}
+
+.footer .footer-redes-sociais {
+    display: flex;
+    list-style: none;
+    justify-content: center
+}
+
+.footer .footer-redes-sociais li a {
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25);
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    margin: 1rem;
+    width: 5rem;
+    transition: background-color .2s linear
+}
+
+.footer .footer-redes-sociais li a svg {
+    color: var(--primary-color);
+    height: 1.875rem;
+    transition: transform .2s linear;
+    width: 1.875rem
+}
+
+.footer .footer-redes-sociais li a:hover {
+    background-color: #fff
+}
+
+.footer .footer-redes-sociais li a:hover svg {
+    transform: scale(1.375)
+}
+
+.footer-copyright{
+    text-align: center;
+    color: #ff4f5b;
+}
