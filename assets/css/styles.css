@@ -85,16 +85,16 @@ main {
 }
 
 .home .container h1 {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 600;
     animation: slideInRight 1s ease-in;
 }
 
 .home .container h2 {
-    width: 70%;
-    font-size: 18px;
+    width: 80%;
+    font-size: 20px;
     padding-top: 12px;
-    font-weight: 500;
+    font-weight: 400;
     animation: slideInLeft 1s ease-in;
 }
 
